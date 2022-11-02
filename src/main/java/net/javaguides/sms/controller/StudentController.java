@@ -108,6 +108,7 @@ return "add_cart";
 @GetMapping("/users/view_user")
 public String viewUser(Model model) {
 model.addAttribute("students", studentService.getAllStudents());
+model.addAttribute("sites",siteService.getAllSites());
 
 return "view_user";
 }
